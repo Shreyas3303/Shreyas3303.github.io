@@ -1,1 +1,85 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #282c34;
+      color: white;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 1rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .project {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 1rem;
+    }
+
+    .project-content h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #282c34;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="your-photo.jpg" alt="Your Name" class="profile-pic" />
+    <h1>Your Name</h1>
+    <p>Your short bio or tagline here.</p>
+  </header>
+
+  <section class="projects">
+    <div class="project">
+      <img src="project1.jpg" alt="Project 1" />
+      <div class="project-content">
+        <h3>Project 1</h3>
+        <p>Short description of what the project is about.</p
+
